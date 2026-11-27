@@ -2,7 +2,7 @@
 
 namespace Pbo\Marketplace;
 
-class Produk
+trait Produk
 {
 
     private string $kode;
@@ -59,10 +59,10 @@ class Produk
         public function total(){
             return $this->harga + ($this->harga * self::PAJAK);
         }
-        public function __construct(){
+        // public function __construct(){
         
-        }
-        public function __destruct(){
+        // }
+         public function __destruct(){
             echo"<br/>";
             echo "TerimaKasih";
         }
